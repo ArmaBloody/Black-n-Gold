@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+	background-image: url(../img/img3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.container{
+	width: 100%;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+}
+header{
+	width: 100%;
+	height: 80px; 
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	background-color: rgba(16, 18, 19, 1);
+}
+.logo{
+	width: 133px;
+	height: 88px;
+}
+.logo img{
+    max-width: 100%;
+    height: 100%;
+}
+.burger-menu{
+	display: none;
+}
+.meun{
+	width: 100%;
+	height: auto;
+}
+.menu>ul{
+	width:100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.menu>ul>li>a{
+	font-size:20px;
+	color: #00e600;
+	font-family: 'Share Tech Mono', monospace;
+	border: 1px solid rgb(119, 119, 119);
+	border-radius: 8px;
+	padding: 8px;
+	margin-left: 20px;
+}
+.menu>ul>li>a:hover{
+    transition-duration: 0.5s;
+    color: #B7B2AB;
+    border: 1px solid #00e600;
+}
+.about-container_text{
+	width: 70%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 0px 10px #00e600;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 30px;
+}
+.title{
+	font-size: 55px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+	margin: 20px 0;
+}
+p{
+	font-size: 22px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+	margin: 10px 0;
+}
+@media screen and (max-width:768px) {
+	body{
+		background-image: none;
+		background-color: #333333;
+	}
+	header{
+        display: flex;
+        justify-content: space-between;
+    }
+	.menu>ul>li>a{
+		font-size:19px;
+		color: #00e600;
+		font-family: 'Share Tech Mono', monospace;
+		border: 1px solid rgb(119, 119, 119);
+		border-radius: 8px;
+		padding: 8px;
+		margin-left: 5px;
+	}
+	.logo{
+        width: 133px;
+        height: 88px;
+    }
+	.about-container_text{
+		margin-top: 20px;
+	}
+	.title{
+		font-size: 35px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+		margin: 2px 0;
+	}
+	p{
+		font-size: 19px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+		margin: 3px 0;
+	}
+}

@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.body{
+	display: block;
+}
+.container{
+	width: 100%;
+	height: auto;
+}
+header{
+	width: 100%;
+	height: 80px; 
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	position: fixed;
+	background-color: rgba(16, 18, 19, 1);
+}
+.logo{
+	width: 133px;
+	height: 88px;
+}
+.logo img{
+    max-width: 100%;
+    height: 100%;
+}
+.top-menu{
+	width: 30%;
+	height: auto;
+
+}
+.meun{
+	width: 100%;
+	height: auto;
+}
+.menu>ul{
+	width:100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.menu>ul>li>a{
+	font-size:20px;
+	color: #00e600;
+	font-family: 'Share Tech Mono', monospace;
+	border: 1px solid rgb(119, 119, 119);
+	border-radius: 8px;
+	padding: 8px;
+	margin-left: 20px;
+}
+.menu>ul>li>a:hover{
+    transition-duration: 0.5s;
+    color: #B7B2AB;
+    border: 1px solid #00e600;
+}
+.dj-mixer{
+	width: 100%;
+	height: auto;
+	background-image: url(../img/img1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.dj-mixer-black{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mixre-title{
+	width: 100%;
+	height: auto;
+	margin-top: 180px;
+}
+.mixer-title_{
+	font-size: 48px;
+	color:#B7B2AB ;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+.mixer-about{
+	width: 75%;
+	height: auto;
+	padding: 50px 0px 50px 0px;
+}
+.mixer-about_{
+	font-size: 22px;
+	color: #B7B2AB;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: 700;
+}
+.about-us{
+	width: 100%;
+	height: 600px;
+	background-color: #333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-us-container{
+	width: 80%;
+	height: 80%;
+	background-color: rgba(16, 18, 19, 0.5);
+	display: flex;
+	border-radius: 8px;
+	border: 1px solid  #00e600;;
+}
+.first{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photo-div{
+	width: 290px;
+	height: 290px;
+	border-radius: 50%;
+	background-image: url(../img/vzgo.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0px 10px black;
+}
+.second{
+	width: 60%;
+	height: 100%;
+}
+.title{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#text1{
+	font-size: 42px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+	margin-top:50px;
+}
+.name{
+	width: 100%;
+	height: 40px;
+}
+#text2{
+	font-size: 25px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+	margin-top:110px;
+}
+.text-div{
+	width: 72%;
+	height: 170px;
+	align-items: center;
+}
+#text3{
+	font-size: 20px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+}
+.dj-mixer2{
+	width: 100%;
+	height: 400px;
+	background: url(../img/img2.jpg);
+	background-size: cover;
+}
+.teach{
+	width: 100%;
+	height: 325px;
+	background-color: #333333;
+}
+.teach-title{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+.teach-text-title{
+	font-size: 50px;
+	color: #B7B2AB;
+	font-family: 'Montserrat', sans-serif;
+}
+.teach-lessons{
+	width: 100%;
+	height: 150px;
+	margin-top:30px;
+	display: flex;
+	justify-content: center;
+}
+.lesson{
+	width: 25%;
+	height: 103px;
+	display:grid;
+	justify-content: center;
+}
+.dj-lesson{
+	width: 64px;
+	height: 64px;	
+	margin: 0 auto;
+}
+.dj-lesson-text{
+	font-size: 30px;
+	color: #B7B2AB;
+	font-family: 'Mulish', sans-serif;
+}
+.footer{
+	width: 100%;
+	height: 80px;
+	background-color:rgba(16, 18, 19, 1) ;
+	display: flex;
+	justify-content: center;
+}
+.footer-container{
+	width: 80%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#footer-text{
+	font-size: 17px;
+	color: #00e600;
+	font-family: 'Mulish', sans-serif;
+}
+.icons{
+	display: flex;
+}
+.web-icon{
+	font-size: 25px;
+	color: #00e600;
+	margin: 3px;
+}
+@media screen and (max-width:768px) {
+	header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-menu{ 
+        display: none;
+    }
+	.logo{
+        width: 133px;
+        height: 88px;
+    }
+	.menu>ul>li>a{
+		font-size:19px;
+		color: #00e600;
+		font-family: 'Share Tech Mono', monospace;
+		border: 1px solid rgb(119, 119, 119);
+		border-radius: 8px;
+		padding: 8px;
+		margin-left: 5px;
+	}
+	.dj-mixer{
+		width: 100%;
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.mixre-title{
+		width: 100%;
+		height: auto;
+	}
+	.mixer-title_{
+		font-size: 30px;
+		color:#B7B2AB ;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+	}
+	.mixer-about{
+		width: 75%;
+		height: auto;
+	}
+	.mixer-about_{
+		font-size: 20px;
+		color: #B7B2AB;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		font-weight: 700;
+	}
+	.about-us{
+		width: 100%;
+		height: auto;
+		background-color: #333333;
+		padding: 30px 0;
+	}
+	.about-us-container{
+		width: 80%;
+		height: 80%;
+		background-color: rgba(16, 18, 19, 0.5);
+		display: flex;
+		justify-content: center;
+		border-radius: 8px;
+		border: 1px solid  #00e600;;
+	}
+	.first{
+		display: none;
+	}
+	.second{
+		width: 100%;
+		height: auto;
+	}
+	.title{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#text1{
+		font-size: 35px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+	}
+	.name{
+		width: 100%;
+		height: auto;
+	}
+	#text2{
+		font-size: 25px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+		margin-top:30px;
+	}
+	.text-div{
+		width: 100%;
+		height: auto;
+		align-items: center;
+	}
+	#text3{
+		font-size: 23px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+		margin: 20px 0px 20px 0px;
+		text-align: center;
+	}
+	.dj-mixer2{
+		width: 100%;
+		height: 350px;
+		background: url(../img/img2.jpg);
+		background-size: cover;
+	}
+	.teach{
+		width: 100%;
+		height:auto;
+		background-color: #333333;
+	
+	}
+	.teach-title{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+	}
+	.teach-text-title{
+		font-size: 30px;
+		color: #B7B2AB;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.teach-lessons{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.lesson{
+		width: 25%;
+		height: auto;
+		display:grid;
+		justify-content: center;
+	}
+	.dj-lesson{
+		width: 50px;
+		height:50px;	
+		margin: 0 auto;
+	}
+	.dj-lesson-text{
+		font-size: 30px;
+		color: #B7B2AB;
+		font-family: 'Mulish', sans-serif;
+	}
+}
